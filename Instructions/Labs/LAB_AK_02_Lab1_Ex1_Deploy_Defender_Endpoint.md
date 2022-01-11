@@ -52,7 +52,9 @@ lab:
 
 5. ダウンロードした zip ファイルを右クリックして、「**すべて展開...**」を選択します。「**完了時に展開されたファイルを表示する**」にチェックが入っていることを確認し、「**展開**」を選択します。
 
-6. 抽出されたファイル (WindowsDefenderATPLocalOnboardingScript.cmd) を右クリックし「**管理者として実行**」を選択します。  もしも Windows SmartScreen が表示されたら、「**その他の情報**」を選択し、「**とにかく実行**」を選択します。**ヒント:** 規定では、ファイルは c:\users\admin\downloads ディレクトリにあります。
+6. 抽出されたファイル (WindowsDefenderATPLocalOnboardingScript.cmd) を右クリックし「**管理者として実行**」を選択します。Windows SmartScreen が発生した場合は、「詳細情報」を選択し、「実行」を選択します。
+
+> **ヒント:** 規定では、ファイルは c:\users\admin\downloads ディレクトリにあります。
     
 7. 「ユーザー アカウント制御」 ウィンドウが表示されたら、「**はい**」を選択して、スクリプトの実行を許可します。スクリプトにより提示される質問に「**Y**」を回答し、**Enter** キーを押します。完了したら、コマンド画面に 「Successfully onboarded machine to Microsoft Defender for Endpoint (マシンの Microsoft Defender for Endpoint へのオンボードに成功しました)」 という内容のメッセージが表示されます。任意のキーを押して、ウィンドウを閉じます。
 
@@ -80,7 +82,7 @@ lab:
     |全般設定|値|
     |---|---|
     |ロール名|**Tier 1 サポート**|
-    |アクセス許可|ライブ応答機能 - 詳細|
+    |アクセス許可|Live response機能 - 上級|
 
 6. 「**割り当てられたユーザー グループ**」 タブを選択します。「**sg-IT**」を選び、「**選択したグループを追加**」を選択します。「*Azure AD user groups with this role*」 (このロールを持つ Azure AD ユーザー グループ) の下に表示されることを確認してください。
 
@@ -102,7 +104,7 @@ lab:
     |全般設定|値|
     |---|---|
     |デバイス グループ名|**レギュラー**|
-    |自動化レベル|Full - remediate threats automatically (完全 - 脅威を自動的に修復する)|
+    |自動化レベル|Full - remediate threats automatically （完全 - 自動的な脅威の修正)|
 
 5. 「**次へ**」を選択します。
 
